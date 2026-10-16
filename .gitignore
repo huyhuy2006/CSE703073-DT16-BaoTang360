@@ -1,0 +1,70 @@
+# =========================================================
+# BIEN MOI TRUONG VA THONG TIN BI MAT
+# Khong dua .env that, mat khau hoac token len GitHub
+# =========================================================
+.env
+.env.*
+!.env.example
+!**/.env.example
+!**/.env.*.example
+
+# =========================================================
+# PHP / LARAVEL
+# =========================================================
+**/vendor/
+**/storage/logs/*.log
+**/storage/framework/cache/data/**
+**/storage/framework/sessions/**
+**/storage/framework/views/**
+/02_SourceCode/laravel/bootstrap/cache/*.php
+/02_SourceCode/laravel/public/build/
+
+# =========================================================
+# JAVASCRIPT / VUE / NODE.JS
+# =========================================================
+**/node_modules/
+**/dist/
+**/.vite/
+**/coverage/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# =========================================================
+# PYTHON
+# =========================================================
+**/.venv/
+**/venv/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+
+# =========================================================
+# DOCKER VA FILE TAM
+# =========================================================
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================================================
+# DU LIEU VA BAN SAO LUU SINH RA
+# Chi dua du lieu nguon da duoc phep vao Git
+# =========================================================
+**/*.sql.gz
+**/*.dump
+/backups/
+/exports/
+
+# =========================================================
+# CONG CU LAP TRINH
+# =========================================================
+.idea/
+.vscode/*
+!.vscode/extensions.json
